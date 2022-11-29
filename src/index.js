@@ -7,7 +7,7 @@ const number = document.querySelector('span');
 const countModifier = (count = 0, action) => {
   if (action.type === 'ADD') {
     return count + 1;
-  } else if ((action.type = 'MINUS')) {
+  } else if (action.type === 'MINUS') {
     return count - 1;
   } else {
     return count;
